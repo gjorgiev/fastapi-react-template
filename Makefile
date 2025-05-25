@@ -1,6 +1,6 @@
 # Makefile for FastAPI + React project
 
-.PHONY: install-backend install-frontend run-backend run-frontend test-backend
+.PHONY: install-backend install-frontend run-backend run-frontend test-backend test-frontend
 
 # Create and activate virtualenv, then install Python deps
 install-backend:
