@@ -4,7 +4,6 @@ import App from './App'
 
 describe('App UI', () => {
   beforeEach(() => {
-    // Mock the fetch function
     global.fetch = vi.fn(() =>
       Promise.resolve({
         json: () => Promise.resolve([{ id: 1, title: 'Test Note', content: 'This is a test note.' }]),

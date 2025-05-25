@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react'
+import type { components } from './types/api'
+type Note = components['schemas']['Note']
+
 
 const API_URL = import.meta.env.VITE_API_URL
 
-interface Note {
-  id: number
-  title: string
-  content: string
-}
 
 function App() {
   const [notes, setNotes] = useState<Note[]>([])
