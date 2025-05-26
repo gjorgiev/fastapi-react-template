@@ -12,7 +12,7 @@ install-frontend:
 
 # Run FastAPI dev server
 run-backend:
-	source .venv/bin/activate && cd backend && uvicorn app.main:app --reload
+	source .venv/bin/activate && cd backend && uvicorn app.main:app --reload --host 0.0.0.0
 
 # Run React dev server
 run-frontend:
